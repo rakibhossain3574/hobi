@@ -3,21 +3,22 @@
 
 // meanmenu
 $('#mobile-menu').meanmenu({
-	meanMenuContainer: '.mobile-menu',
-	meanScreenWidth: "992"
+	meanMenuContainer: '.hobi_mobile_menu',
+	meanScreenWidth: "1200",
+	onePage: true
 });
 
 // One Page Nav
-var top_offset = $('.header-area').height() - 10;
+var top_offset = $('.header_area').height() - 10;
 $('.main-menu nav ul').onePageNav({
 	currentClass: 'active',
 	scrollOffset: top_offset,
 });
 
-
+// Sticky Menu 
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
-	if (scroll < 245) {
+	if (scroll < 230) {
 		$(".header-sticky").removeClass("sticky");
 	} else {
 		$(".header-sticky").addClass("sticky");
@@ -70,20 +71,26 @@ mainSlider();
 // owlCarousel
 $('.testimonial_active').owlCarousel({
     loop:true,
-    margin:30,
-	items:1,
+    margin:20,
+	items:3,
+	stagePadding: 2,
 	navText:['<i class="fas fa-arrow-left"></i>','<i class="fas fa-arrow-right"></i>'],
     nav:true,
-	dots:false,
+	// dots:false,
     responsive:{
         0:{
-            items:1
+            items:1,
+			nav:false
         },
-        767:{
+        480:{
+            items:1,
+			nav:false
+        },
+        768:{
+            items:2
+        },
+        1200:{
             items:3
-        },
-        992:{
-            items:5
         }
     }
 })
@@ -154,5 +161,5 @@ $('.counter').counterUp({
     time: 1000
 });
 
-
 })(jQuery);
+

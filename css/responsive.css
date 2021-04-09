@@ -1,32 +1,318 @@
-/* Normal desktop :1200px. */
-@media (min-width: 1200px) and (max-width: 1500px) {
+/* large desktop :1800px. */
+@media (min-width: 1501px) and (max-width: 1800px) {
+    .slider_thumb::before {
+        left: 30px;
+        width: 600px;
+    }
+}
 
+/* Normal desktop :1201px. */
+@media (min-width: 1201px) and (max-width: 1500px) {
+    .header_area {
+        padding: 0 50px;
+    }
+    .main_menu ul li a {
+        padding: 45px 12px;
+    }
+    .menu_left {
+        width: 24%;
+    }
+    .slider_thumb {
+        width: 600px;
+    }
+    .slider_thumb img {
+        width: 600px;
+    }
+    .slider_thumb::before {
+        left: 70px;
+        width: 500px;
+        height: 600px;
+    }
 
 }
 
 
-/* Normal desktop :992px. */
+/* small desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .header_area {
+        padding: 0 50px;
+    }
+    .menu_left {
+        float: right;
+        width: 40%;
+        margin-right: 0px;
+        clear: both;
+        margin-top: 15px;
+    }
+    .menu_middle {
+        width: 40%;
+    }
+    .single_slider {
+        min-height: 670px;
+    }
+    .menu_right {
+        float: left;
+        margin-top: 25px;
+        width: 10%;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    .about_title {
+        margin-top: 30px;
+    }
+    .branding_design, .Web_Development, .Digital_Marketing {
+        padding: 20px;
+    }
+    .progress {
+        margin-bottom: 30px;
+    }
+    .skill_bars span {
+        margin-bottom: 5px;
+    }
+    .filter-button-group button {
+        padding: 0 20px 20px;
+    }
+    .cta_btn {
+        margin-bottom: 45px;
+    }
+    .feed_left .feed_text {
+        padding-right: 20px;
+    }
+    .feed_right {
+        padding: 40px 5px 10px 40px;
+    }
 
 }
 
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .header_area {
+        padding: 0 50px;
+    }
+    .menu_left {
+        float: right;
+        width: 40%;
+        margin-right: 0px;
+        clear: both;
+        margin-top: 15px;
+    }
+    .menu_middle {
+        width: 40%;
+    }
+    .single_slider {
+        min-height: 670px;
+    }
+    .menu_right {
+        float: left;
+        margin-top: 25px;
+        width: 10%;
+    }
+    .cta_btn {
+        margin-bottom: 45px;
+    }
+    .experiance .white-bg {
+        padding: 30px;
+    }
+    .education .img1 {
+        padding-left: 0;
+        position: static;
+        margin-top: 30px;
+    }
+    .education .img2 {
+        margin-top: 30px;
+        position: static;
+    }
+    .angles_content {
+        margin-bottom: 100px;
+    }
+    .angle_title {
+        top: 90%;
+    }
+    section#Team {
+        padding-bottom: 120px;
+    }
+    .form_btn {
+        margin-bottom: 30px;
+    }
+    .single_item h5 {
+        margin-bottom: 15px;
+    }
+    .testimonial_wrapper {
+        padding: 30px 25px;
+    }
 
 }
 
- 
-/* small mobile :320px. */
-@media (max-width: 767px) {
-
- 
-}
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
+    .header_area {
+        padding: 0 50px;
+    }
+    .menu_left {
+        float: right;
+        width: 40%;
+        margin-right: 0px;
+        clear: both;
+        margin-top: 15px;
+    }
+    .menu_middle {
+        width: 40%;
+    }
+    .single_slider {
+        min-height: 620px;
+    }
+    .menu_right {
+        float: left;
+        margin-top: 25px;
+        width: 10%;
+    }
+    .slider_content h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 55px;
+    }
+    .cta_title {
+        padding-left: 10px;
+    }
+    .cta .cta_title h2 {
+        font-size: 56px;
+    }
+    .cta_btn {
+        padding-left: 5px;
+        padding-bottom: 30px;
+    }
+    .education .img1 {
+        padding-left: 0;
+        position: static;
+        margin-top: 30px;
+    }
+    .education .img2 {
+        margin-top: 30px;
+        position: static;
+    }
+    .img2 img, .img1 img {
+        width: 100%;
+    } 
+    .angles_content {
+        margin-bottom: 100px;
+    }
+    .angle_title {
+        top: 80%;
+    }
+    section#Team {
+        padding-bottom: 80px;
+    }
+    .form_btn {
+        margin-bottom: 30px;
+    }
+}
+
+/* small mobile :320px. */
+@media (max-width: 480px) {
+    .header_area {
+        padding: 0 30px;
+    }
+    .single_slider {
+        min-height: 560px;
+    }
+    .menu_right {
+        margin-top: 15px;
+    }
+    .slider_content h1 {
+        font-size: 40px;
+    }
+    .img2 img, .img1 img {
+        width: 100%;
+    } 
+    .education .img1 {
+        padding-left: 0;
+        position: static;
+        margin-top: 30px;
+    }
+    .education .img2 {
+        margin-top: 10px;
+        position: static;
+    }
+    .angles_content {
+        margin-bottom: 100px;
+    }
+    .angle_title {
+        top: 80%;
+    }
+    section#Team {
+        padding-bottom: 80px;
+    }
+    .mean-container a.meanmenu-reveal {
+        margin-top: -34px;
+    }
+    .slider_content span {
+        font-size: 15px;
+    }
+    .slider_content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .slider_btn a {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    .btn {
+        margin-bottom: 10px;
+    }
+    .btn-abs {
+        margin-left: 0px;
+    }
+    #scrollUp {
+        background: #ff3d4f;
+        right: 15px;
+        bottom: 20px;
+        opacity: .6;
+    }
+    .branding_design, .Web_Development, .Digital_Marketing {
+        border: 6px solid #f7f8ff;
+        padding: 30px 20px;
+    }
+    .filter-button-group button {
+        padding: 0 15px 20px;
+    }
+    .cta_title, .cta_btn {
+        padding-left: 10px;
+    }
+    .cta .cta_title h2 {
+        font-size: 40px;
+    }
+    .experiance .white-bg {
+        padding: 30px;
+    }
+    .experiance .white-bg span {
+        background: #fff;
+        display: block;
+        width: 100%;
+    }
+    .experiance .icons i {
+        color: #ff3d4f;
+        line-height: 80px;
+        width: 80px;
+        background: #fff2f3;
+    }
+    .experiance .co_name {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .description {
+        margin-top: 25px;
+        text-align: center;
+    }
+    .testimonial_wrapper {
+        padding: 25px 20px;
+    }
  
 }
