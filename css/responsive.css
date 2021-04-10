@@ -209,6 +209,19 @@
     .form_btn {
         margin-bottom: 30px;
     }
+    .branding_design, .Web_Development, .Digital_Marketing {
+        padding: 35px;
+    }
+    .experiance .white-bg {
+        padding: 30px;
+    }
+    .feed_left .feed_text {
+        padding: 25px;
+    }
+    .feed_right {
+        padding: 25px 20px 0px;
+    }
+    
 }
 
 /* small mobile :320px. */
@@ -284,12 +297,13 @@
     }
     .cta_title, .cta_btn {
         padding-left: 10px;
+        padding-bottom: 30px;
     }
     .cta .cta_title h2 {
         font-size: 40px;
     }
     .experiance .white-bg {
-        padding: 30px;
+        padding: 30px 20px;
     }
     .experiance .white-bg span {
         background: #fff;
@@ -313,6 +327,12 @@
     }
     .testimonial_wrapper {
         padding: 25px 20px;
+    }
+    .feed_left .feed_text {
+        padding: 20px;
+    }
+    .feed_right {
+        padding: 25px 20px 0px;
     }
  
 }
