@@ -8,13 +8,6 @@ $('#mobile-menu').meanmenu({
 	onePage: true
 });
 
-// One Page Nav
-var top_offset = $('.header_area').height() - 10;
-$('.main-menu nav ul').onePageNav({
-	currentClass: 'active',
-	scrollOffset: top_offset,
-});
-
 // Sticky Menu 
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
@@ -160,6 +153,12 @@ $('.counter').counterUp({
     delay: 10,
     time: 1000
 });
+ 
+// menu active 
+$('.main_menu ul li').on('click', function(){
+	$(this).addClass('menu_active').siblings().removeClass('menu_active')
+});
+
 
 })(jQuery);
 

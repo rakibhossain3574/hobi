@@ -1,18 +1,3 @@
-/* CSS Index
------------------------------------
-1. Theme default css
-2. header
-3. slider
-4. about-area
-5. features-box
-6. department
-7. team
-8. video-area
-9. counter
-10. footer
-*/
-
-
 
 /* 1. Theme default css */
 html {
@@ -292,7 +277,8 @@ label {
 .main_menu ul li {
 	display: inline-block;
 }
-.main_menu ul li a{
+.main_menu ul li a,
+.main_menu ul li.menu_active a {
 	color: #000a2d;
 	padding: 45px 15px;
 	font-weight: 500;
@@ -302,7 +288,7 @@ label {
 .main_menu ul li:hover > a{
 	color: #ff3d4f;
 }
-.main_menu ul li a::before{
+.main_menu ul li a::before {
 	background: #ff3d4f;
 	position: absolute;
 	left: 0;
@@ -314,6 +300,15 @@ label {
 }
 .main_menu ul li:hover a::before{	
 	width: 100%;
+}
+.main_menu ul li.menu_active a::before{
+	background: #ff3d4f;
+	position: absolute;
+	left: 0;
+	content: "";
+	height: 2px;
+	width: 100%;
+	bottom: 23px;
 }
 .menu_right {
     float: left;
@@ -331,6 +326,7 @@ label {
     margin-right: 0px;
     clear: both;
 }
+
 /*============== Slider Area ======================*/
 
 .single_slider{
