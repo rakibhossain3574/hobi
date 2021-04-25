@@ -859,11 +859,14 @@ section.cta {
 
 /*============== counter Area ======================*/
 
-.counter_content span {
+.numscroller {
     font-size: 60px;
     color: #000a2d;
     letter-spacing: -0.3px;
     line-height: 0;
+}
+.counter_container {
+    margin-bottom: 35px;
 }
 .counter_content p {
     text-transform: uppercase;
