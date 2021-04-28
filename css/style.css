@@ -386,7 +386,7 @@ label {
     content: "";
     left: -58px;
     bottom: 5px;
-    width: 785px;
+    width: 750px;
     height: 700px;
     background: #ff3d4f;
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
@@ -859,14 +859,11 @@ section.cta {
 
 /*============== counter Area ======================*/
 
-.numscroller {
+.counter_content span {
     font-size: 60px;
     color: #000a2d;
     letter-spacing: -0.3px;
     line-height: 0;
-}
-.counter_container {
-    margin-bottom: 35px;
 }
 .counter_content p {
     text-transform: uppercase;
