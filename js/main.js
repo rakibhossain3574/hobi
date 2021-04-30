@@ -104,13 +104,13 @@ $.scrollUp({
 
 // WOW active
 new WOW().init();
-
+ 
 // counterUp
 $('.counter').counterUp({
     delay: 10,
     time: 1000
 });
- 
+
 // menu active 
 $('.main_menu ul li').on('click', function(){
 	$(this).addClass('menu_active').siblings().removeClass('menu_active')
