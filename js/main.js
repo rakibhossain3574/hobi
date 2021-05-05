@@ -8,6 +8,13 @@ $('#mobile-menu').meanmenu({
 	onePage: true
 });
 
+// One Page Nav
+var top_offset = $('.header-area').height() + 100;
+$('.main_menu nav ul').onePageNav({
+	currentClass: 'active',
+	scrollOffset: top_offset,
+});
+
 // Sticky Menu 
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
